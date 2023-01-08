@@ -11,7 +11,9 @@ const Portfolio = () => {
             <div className="project-content">
               <div className="tag">{project.tag}</div>
               <div className="hed">{project.hed}</div>
-              <img src={process.env.PUBLIC_URL + "/" + project.img} />
+              <a href={project.url} target="_blank">
+                <img src={process.env.PUBLIC_URL + "/" + project.img} />
+              </a>
             </div>
           </div>
         );

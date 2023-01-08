@@ -2,49 +2,64 @@
   {
     "hed": "Why is K-pop so popular",
     "desc": "desc",
-    "tag": "3D",
-    "img": "kpop.png"
+    "tag": "3D storytelling",
+    "img": "kpop.jpeg",
+    "url": "https://www.washingtonpost.com/arts-entertainment/interactive/2021/kpop-bts-youtube-twitter-blackpink/"
   },
   {
-    "hed": "Why is K-pop so popular",
+    "hed": "What Bloomberg’s half-billion dollars in campaign spending would cost you on your budget",
     "desc": "desc",
     "tag": "Game",
-    "img": "kpop.png"
+    "img": "billionaire.jpeg",
+    "url": "https://www.washingtonpost.com/graphics/2020/politics/wealth-comparison/"
   },
   {
-    "hed": "Why is K-pop so popular",
-    "desc": "desc",
-    "tag": "Chatbot",
-    "img": "kpop.png"
+    "hed": "How does an autonomous car work? Not so great.",
+    "desc": "G",
+    "tag": "Game",
+    "img": "autocar.png",
+    "url": "https://www.washingtonpost.com/graphics/2019/business/how-does-an-autonomous-car-work/"
   },
   {
-    "hed": "Why is K-pop so popular",
+    "hed": "How epidemics like covid-19 end (and how to end them faster)",
     "desc": "desc",
-    "tag": "3D visualization",
-    "img": "kpop.png"
+    "tag": "Data visualization",
+    "img": "simulation.jpeg",
+    "url": "https://www.washingtonpost.com/graphics/2020/health/coronavirus-how-epidemics-spread-and-end/?itid=ap_youjinshin"
   },
   {
-    "hed": "Why is K-pop so popular",
+    "hed": "Coronavirus trackers",
     "desc": "desc",
-    "tag": "3D",
-    "img": "kpop.png"
+    "tag": "Data visualization",
+    "img": "tracker.jpg",
+    "url": "https://www.washingtonpost.com/graphics/2020/world/mapping-spread-new-coronavirus/?itid=sn_coronavirus_2%2F"
   },
   {
-    "hed": "Why is K-pop so popular",
+    "hed": "A mystery dinosaur in the nation’s basement",
     "desc": "desc",
-    "tag": "3D",
-    "img": "kpop.png"
+    "tag": "3D storytelling",
+    "img": "dino.png",
+    "url": "https://www.washingtonpost.com/graphics/2018/national/smithsonian-dinosaur-augmented-reality/"
   },
   {
-    "hed": "Why is K-pop so popular",
+    "hed": "Playing for the ‘right reasons’",
     "desc": "desc",
-    "tag": "3D",
-    "img": "kpop.png"
+    "tag": "Game",
+    "img": "game.gif",
+    "url": "https://www.washingtonpost.com/graphics/2020/entertainment/the-bachelorette-show-game/"
   },
   {
-    "hed": "Why is K-pop so popular",
+    "hed": "Gridlock in the sky",
     "desc": "desc",
-    "tag": "3D",
-    "img": "kpop.png"
+    "tag": "Data visualization",
+    "img": "sky.png",
+    "url": "https://www.washingtonpost.com/graphics/2018/business/spacex-falcon-heavy-launch-faa-air-traffic/"
+  },
+  {
+    "hed": "How Las Vegas Police Scrambled to Find the Gunman",
+    "desc": "desc",
+    "tag": "Audio storytelling",
+    "img": "lasvegas.jpeg",
+    "url": "https://www.wsj.com/graphics/las-vegas-police-scramble-to-find-mandalay-bay-shooter/"
   }
 ]

@@ -12,6 +12,7 @@ $line-gap: 12px;
 
 .project {
   display: inline-block;
+  vertical-align: top; 
   width: calc(33.33% - 2px);
   border-left: 1px solid #333;
   margin-top: $line-gap * 2;
@@ -27,13 +28,15 @@ $line-gap: 12px;
     border-bottom: 1px solid #333;
     padding: 7px 0px;
     font-size: 13px;
+    color: #333;
   }  
   .project-content .hed {
-    padding: 15px 0px;
+    padding: 16px 0px;
     font-size: 20px;
   }  
   .project-content img {
     width: 100%;
+    cursor:pointer;
     // height: 100%;
   }  
 
