@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Inter", sans-serif;
+  margin: 0px;
+}
+
+.intro-text {
+  position: relative;
+  font-size: 54px;
+  font-weight: 300;
+  max-width: 840px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+
+  span {
+    font-weight: 600;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 50px;
+  }
+  @media (max-width: 800px) {
+      font-size: 43px;
+      margin-top: 110px;
+    margin-bottom: 110px;
+  }
+  @media (max-width: 500px) {
+    font-size: 40px;
+    margin-top: 110px;
+  margin-bottom: 110px;
+}
+}
+
+
+/* FOOTER */
+.footer {
+  position: relative;
+  width: 100%;
+  left: 0px;
+  height: 120px;
+  bottom: 0px;
+  margin: 0px;
+  padding-top: 30px;
+}
+.footer > .footer-social {
+  max-width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-social > .social {
+  font-weight: 500;
+  font-size: 18px;
+  border-bottom: 2px solid #333;
+  cursor: pointer;
+}
