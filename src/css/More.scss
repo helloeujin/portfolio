@@ -12,11 +12,14 @@
     // margin-bottom: 10px;
     cursor: pointer;
     // border-top: 1px solid #333;
+    @media (max-width: $width-sm) {
+        font-size: 32px;
+    }
 }
 .moreHed:hover {
     color: blue;
     .arrow {
-        margin-left: 10px;
+        // margin-left: 10px;
         transition: all .1s;
     }
 }
@@ -41,6 +44,10 @@
     transition: all .3s;
     opacity: 0;
 
+    @media (max-width: $width-sm) {
+        font-size: 14px;
+    }
+
     .tags {
         font-size: 14px;
         padding: 1px 8px;
@@ -48,6 +55,9 @@
         border-radius: 12px;
         margin-right: 4px;
         margin-left: 4px;
+        @media (max-width: $width-sm) {
+            font-size: 13px;
+        }
     }
     .honor {
         margin-bottom: 18px;
@@ -68,17 +78,32 @@
 }
 
 .showSkills {
-    height: 200px;
+    height: 220px;
     opacity: 1;
+    @media (max-width: $width-sm) {
+        height: 280px;
+    }
 }
 
 .showHonors {
-    height: 1860px;
+    height: 1870px;
     opacity: 1;
+    @media (max-width: $width-sm) {
+        height: 1880px;
+    }
+    @media (max-width: $width-xxs) {
+        height: 2300px;
+    }
 }
 
 .showTeaching{
     height: 950px;
     opacity: 1;
+    @media (max-width: $width-sm) {
+        height: 990px;
+    }
+    @media (max-width: $width-xxs) {
+        height: 1230px;
+    }
 }
 

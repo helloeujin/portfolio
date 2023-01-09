@@ -78,7 +78,7 @@ const More = () => {
 
       {/* TALKS */}
       <div className="moreHed" onClick={handleClick(2)}>
-        Talks and Teaching{" "}
+        Talks & Teaching{" "}
         <span className={clickedIndex[2] ? "rotateArrow arrow" : "arrow"}>
           &#x2192;
         </span>
