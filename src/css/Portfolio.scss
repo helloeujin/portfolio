@@ -17,7 +17,7 @@ $line-gap: 12px;
   vertical-align: top; 
   width: calc(33.33% - 2px);
   border-left: 1px solid #333;
-  margin-top: $line-gap * 2;
+  margin-top: $line-gap * 3;
   // background-color: #f7f7f7;
 
   .project-content {
@@ -37,6 +37,7 @@ $line-gap: 12px;
     font-size: 20px;
     cursor: pointer;
     
+    // @media (max-width: $width-sm) { font-size: 18px;}
   } 
   .project-content .hed span:hover {
     // opacity: 0.5;
@@ -51,8 +52,6 @@ $line-gap: 12px;
     // height: 100%;
   }  
   .project-content img:hover {
-    // // width: 80%;
-    // transform: rotate(3deg);
     width: calc(100% - 3.2px);
     border: 1.6px solid blue;
     transition: all .1s;
@@ -64,12 +63,19 @@ $line-gap: 12px;
     display: block;
     height: 0px;
     transition: height 300ms;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 20px;
+    
+    .bolden {
+      font-weight: bold;
+    }
+    @media (max-width: $width-lg) {
+      line-height: 20px;
+    }
   }
   .showDesc {
     height: 100px;
-    padding-top: 18px;
+    padding-top: 16px;
     opacity: 1;
   }
 

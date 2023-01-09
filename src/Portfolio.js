@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./css/Portfolio.scss";
 
 const Portfolio = () => {
@@ -10,6 +10,18 @@ const Portfolio = () => {
       [index]: !state[index], // <-- update value by index key
     }));
   };
+
+  // const htmlDecode = (input) => {
+  //   let ret = input.replace(/&gt;/g, ">");
+  //   ret = ret.replace(/&lt;/g, "<");
+  //   ret = ret.replace("″", '"');
+  //   return ret;
+  // };
+
+  const renderHTML = (rawHTML) =>
+    React.createElement("div", {
+      dangerouslySetInnerHTML: { __html: rawHTML },
+    });
 
   const data = require("./data/data.json");
 
@@ -37,7 +49,7 @@ const Portfolio = () => {
 
               {/* DESC */}
               <div className={clickedIndex[index] ? "showDesc desc" : "desc"}>
-                {project.desc}
+                {renderHTML(project.desc)}
               </div>
 
               {/* IMG */}
