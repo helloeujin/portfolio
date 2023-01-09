@@ -1,3 +1,4 @@
+import About from "./About";
 import "./css/App.scss";
 import Footer from "./Footer";
 import Portfolio from "./Portfolio";
@@ -11,6 +12,8 @@ function App() {
       </div>
 
       <Portfolio />
+
+      <About />
 
       <Footer />
     </>

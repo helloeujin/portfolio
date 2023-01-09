@@ -1,7 +1,9 @@
+@import "./Consts.scss";
+
 $line-gap: 12px;
 
 .portfolio {
-  max-width: 1300px;
+  max-width: $pg-xlg;
   margin: 0px auto;
   padding: 0px 20px;
   margin-bottom: 100px;
@@ -34,36 +36,47 @@ $line-gap: 12px;
     padding-top: 16px;
     font-size: 20px;
     cursor: pointer;
-  }  
+    
+  } 
+  .project-content .hed span:hover {
+    // opacity: 0.5;
+    // background-color: #fed602;
+    color: blue;
+    transition: all 100ms;
+  }   
   .project-content img {
-    padding-top: 20px;
+    margin-top: 20px;
     width: 100%;
     cursor:pointer;
     // height: 100%;
   }  
   .project-content img:hover {
-    // width: 80%;
-    transform: rotate(3deg);
-    transition: all .3s;
+    // // width: 80%;
+    // transform: rotate(3deg);
+    width: calc(100% - 3.2px);
+    border: 1.6px solid blue;
+    transition: all .1s;
   }
 
   .desc {
     opacity: 0;
     overflow: hidden;
     display: block;
-    height:0px;
+    height: 0px;
     transition: height 300ms;
+    font-size: 14px;
+    line-height: 20px;
   }
   .showDesc {
     height: 100px;
-    padding-top: 16px;
+    padding-top: 18px;
     opacity: 1;
   }
 
   .arrow {
     cursor: pointer;
     display: inline-block;
-    transition: all .3s;
+    transition: transform .3s;
   }
   .rotateArrow {
     transform: rotate(90deg);

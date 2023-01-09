@@ -23,14 +23,16 @@ const Portfolio = () => {
 
               {/* HED */}
               <div className="hed" onClick={handleClick(index)}>
-                {project.hed}{" "}
-                <div
-                  className={
-                    clickedIndex[index] ? "rotateArrow arrow" : "arrow"
-                  }
-                >
-                  &#x2192;{" "}
-                </div>{" "}
+                <span>
+                  {project.hed}{" "}
+                  <div
+                    className={
+                      clickedIndex[index] ? "rotateArrow arrow" : "arrow"
+                    }
+                  >
+                    &#x2192;{" "}
+                  </div>{" "}
+                </span>
               </div>
 
               {/* DESC */}
