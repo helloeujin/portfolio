@@ -7,8 +7,50 @@
 }
 
 .moreHed {
-    font-size: 32px;
+    font-size: 34px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
     // border-top: 1px solid #333;
+}
+.moreHed:hover {
+    color: blue;
+    .arrow {
+        margin-left: 10px;
+        transition: all .1s;
+    }
+}
+
+.moreDesc {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    line-height: 1.42em;
+
+    .tags {
+        font-size: 14px;
+        padding: 1px 8px;
+        border: 1px solid #333;
+        border-radius: 12px;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+    .honor {
+        margin-bottom: 18px;
+    }
+    .date {
+        font-size: 12px;
+        // font-weight: bold;
+        margin-right: 11px;
+        background-color: #333;
+        color:white;
+        padding: 0px 2px 0px 4px;
+    }
+    .story {
+        color: #888;
+    }
+}
+
+.moreDescMore {
+    line-height: 1.76em;
 }

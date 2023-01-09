@@ -50,7 +50,7 @@
   },
   {
     "hed": "Gridlock in the sky",
-    "desc": "<ul><li>Responsibilities: Data analysis, design and development </li><li> Tools: Javascript, Three.js (camera and trail animation)</li> </ul>",
+    "desc": "<ul><li>Responsibilities: Data analysis, design and development </li><li> Tools: Javascript, Three.js</li> </ul>",
     "tag": "Data visualization",
     "img": "sky.png",
     "url": "https://www.washingtonpost.com/graphics/2018/business/spacex-falcon-heavy-launch-faa-air-traffic/"

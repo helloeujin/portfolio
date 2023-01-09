@@ -18,7 +18,6 @@ $line-gap: 12px;
   width: calc(33.33% - 2px);
   border-left: 1px solid #333;
   margin-top: $line-gap * 3;
-  // background-color: #f7f7f7;
 
   .project-content {
     width: calc(100% - 2*$line-gap);
@@ -36,24 +35,27 @@ $line-gap: 12px;
     padding-top: 16px;
     font-size: 20px;
     cursor: pointer;
-    
-    // @media (max-width: $width-sm) { font-size: 18px;}
   } 
-  .project-content .hed span:hover {
-    // opacity: 0.5;
-    // background-color: #fed602;
-    color: blue;
-    transition: all 100ms;
-  }   
+  .project-content .hed:hover {
+    span {
+      color: blue;
+      transition: all 100ms;
+  
+      .arrow {
+        margin-left: 8px;
+        transition: all 100ms;
+      }
+    }  
+  }
+  
   .project-content img {
     margin-top: 20px;
     width: 100%;
     cursor:pointer;
-    // height: 100%;
   }  
   .project-content img:hover {
-    width: calc(100% - 3.2px);
-    border: 1.6px solid blue;
+    width: calc(100% - 4px);
+    border: 2px solid blue;
     transition: all .1s;
   }
 
@@ -63,7 +65,7 @@ $line-gap: 12px;
     display: block;
     height: 0px;
     transition: height 300ms;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 20px;
     
     .bolden {
@@ -74,7 +76,7 @@ $line-gap: 12px;
     }
   }
   .showDesc {
-    height: 100px;
+    height: 110px;
     padding-top: 16px;
     opacity: 1;
   }
