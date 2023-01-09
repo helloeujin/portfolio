@@ -50,6 +50,9 @@ const More = () => {
               Design: <span className="tags">Figma</span>
               <span className="tags">Illustrator</span>
             </li>
+            <li>
+              Mobile dev: <span className="tags">React Native</span>
+            </li>
           </ul>
         </div>
       </div>
