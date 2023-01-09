@@ -11,13 +11,6 @@ const Portfolio = () => {
     }));
   };
 
-  // const htmlDecode = (input) => {
-  //   let ret = input.replace(/&gt;/g, ">");
-  //   ret = ret.replace(/&lt;/g, "<");
-  //   ret = ret.replace("″", '"');
-  //   return ret;
-  // };
-
   const renderHTML = (rawHTML) =>
     React.createElement("div", {
       dangerouslySetInnerHTML: { __html: rawHTML },

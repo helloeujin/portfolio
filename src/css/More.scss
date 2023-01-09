@@ -1,0 +1,14 @@
+@import "./Consts.scss";
+
+.more {
+    max-width: $width-sm;
+    margin: 10px auto 90px auto;
+    padding: 20px;
+}
+
+.moreHed {
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    // border-top: 1px solid #333;
+}

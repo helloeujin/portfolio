@@ -1,6 +1,7 @@
 import About from "./About";
 import "./css/App.scss";
 import Footer from "./Footer";
+import More from "./More";
 import Portfolio from "./Portfolio";
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <Portfolio />
 
       <About />
+
+      <More />
 
       <Footer />
     </>
