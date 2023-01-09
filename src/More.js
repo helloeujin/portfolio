@@ -1,17 +1,35 @@
+import { useState } from "react";
 import "./css/More.scss";
 
 const More = () => {
   const honorsData = require("./data/honors.json");
   const teachingData = require("./data/teaching.json");
-  console.log(teachingData);
+
+  const [clickedIndex, setClickedIndex] = useState({});
+
+  const handleClick = (index) => () => {
+    setClickedIndex((state) => ({
+      ...state, // <-- copy previous state
+      [index]: !state[index], // <-- update value by index key
+    }));
+  };
 
   return (
     <div className="more">
       {/* SKILLS */}
-      <div className="moreHed">
-        Skills <span className="arrow">&#x2192;</span>
+      <div className="moreHed" onClick={handleClick(0)}>
+        Skills{" "}
+        <span className={clickedIndex[0] ? "rotateArrow arrow" : "arrow"}>
+          &#x2192;
+        </span>
       </div>
-      <div className="moreDesc moreDescMore">
+      <div
+        className={
+          clickedIndex[0]
+            ? "moreDesc moreDescMore showSkills"
+            : "moreDesc moreDescMore"
+        }
+      >
         <div className="descHed">
           <ul>
             <li>
@@ -37,10 +55,13 @@ const More = () => {
       </div>
 
       {/* HONORS */}
-      <div className="moreHed">
-        Honors <span className="arrow">&#x2192;</span>
+      <div className="moreHed" onClick={handleClick(1)}>
+        Honors{" "}
+        <span className={clickedIndex[1] ? "rotateArrow arrow" : "arrow"}>
+          &#x2192;
+        </span>
       </div>
-      <div className="moreDesc">
+      <div className={clickedIndex[1] ? "moreDesc  showHonors" : "moreDesc "}>
         {" "}
         {honorsData.map((honor) => {
           return (
@@ -48,7 +69,7 @@ const More = () => {
               <span className="date">{honor.date} </span>
               {honor.org}, {honor.award}
               {honor.story ? (
-                <span className="story">, '{honor.story}'</span>
+                <span className="story">, {honor.story}</span>
               ) : null}
             </div>
           );
@@ -56,10 +77,13 @@ const More = () => {
       </div>
 
       {/* TALKS */}
-      <div className="moreHed">
-        Talks and Teaching <span className="arrow">&#x2192;</span>
+      <div className="moreHed" onClick={handleClick(2)}>
+        Talks and Teaching{" "}
+        <span className={clickedIndex[2] ? "rotateArrow arrow" : "arrow"}>
+          &#x2192;
+        </span>
       </div>
-      <div className="moreDesc">
+      <div className={clickedIndex[2] ? "moreDesc  showTeaching" : "moreDesc "}>
         {" "}
         {teachingData.map((teaching) => {
           return (

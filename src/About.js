@@ -4,8 +4,8 @@ const About = () => {
   return (
     <>
       <div className="about">
-        I am a data visualization practitioner and visual storyteller. Until
-        recently, I was a graphics reporter at{" "}
+        I design, code and write for creating data visualization and visual
+        storytelling. Until recently, I was a graphics reporter at{" "}
         <a
           href="https://www.washingtonpost.com/people/youjin-shin/"
           target="_blank"

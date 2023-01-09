@@ -2,14 +2,14 @@
 
 .more {
     max-width: $width-sm;
-    margin: 10px auto 90px auto;
+    margin: 12px auto 12px auto;
     padding: 20px;
 }
 
 .moreHed {
     font-size: 34px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    // margin-top: 10px;
+    // margin-bottom: 10px;
     cursor: pointer;
     // border-top: 1px solid #333;
 }
@@ -20,12 +20,26 @@
         transition: all .1s;
     }
 }
+.arrow {
+    transform: rotate(0deg);
+    display: inline-block;
+    transition: transform .3s;
+}
+.rotateArrow {
+    transform: rotate(90deg);
+}
 
 .moreDesc {
     font-size: 15px;
     margin-top: 30px;
-    margin-bottom: 60px;
-    line-height: 1.42em;
+    margin-bottom: 0px;
+    line-height: 1.4em;
+
+    height: 0px;
+    overflow: hidden;
+    vertical-align: top; 
+    transition: all .3s;
+    opacity: 0;
 
     .tags {
         font-size: 14px;
@@ -39,18 +53,32 @@
         margin-bottom: 18px;
     }
     .date {
-        font-size: 12px;
-        // font-weight: bold;
-        margin-right: 11px;
-        background-color: #333;
-        color:white;
-        padding: 0px 2px 0px 4px;
+        font-weight: bold;
+        font-size: 13px;
+        margin-right: 12px;
     }
     .story {
-        color: #888;
+        color: #aaa;
     }
 }
+
 
 .moreDescMore {
     line-height: 1.76em;
 }
+
+.showSkills {
+    height: 200px;
+    opacity: 1;
+}
+
+.showHonors {
+    height: 1860px;
+    opacity: 1;
+}
+
+.showTeaching{
+    height: 950px;
+    opacity: 1;
+}
+
