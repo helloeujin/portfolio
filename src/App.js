@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div className="intro-text">
-        Hello! I'm <span>Youjin</span>.
+        Hello! I'm <span>Youjin Shin</span>.
         <br />I am a data visualization specialist and visual storyteller.
       </div>
 

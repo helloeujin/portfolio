@@ -14,13 +14,13 @@ $line-gap: 12px;
 
 .project {
   display: inline-block;
-  vertical-align: top; 
+  vertical-align: top;
   width: calc(33.33% - 2px);
   border-left: 1px solid #333;
   margin-top: $line-gap * 3;
 
   .project-content {
-    width: calc(100% - 2*$line-gap);
+    width: calc(100% - 2 * $line-gap);
     margin-left: $line-gap;
     height: 100%;
   }
@@ -33,39 +33,41 @@ $line-gap: 12px;
     @media (max-width: $width-xxs) {
       font-size: 12px;
     }
-  }  
+  }
   .project-content .hed {
     padding-top: 16px;
     font-size: 20px;
     cursor: pointer;
+    @extend .selection-disabled;
+
     @media (max-width: $width-xs) {
       font-size: 18px;
     }
     @media (max-width: $width-xxs) {
       font-size: 17px;
     }
-  } 
+  }
   .project-content .hed:hover {
     span {
       color: blue;
       transition: all 100ms;
-  
+
       .arrow {
         // margin-left: 8px;
         transition: all 100ms;
       }
-    }  
+    }
   }
-  
+
   .project-content img {
     margin-top: 20px;
     width: 100%;
-    cursor:pointer;
-  }  
+    cursor: pointer;
+  }
   .project-content img:hover {
     width: calc(100% - 4px);
     border: 2px solid blue;
-    transition: all .1s;
+    transition: all 0.1s;
   }
 
   .desc {
@@ -76,7 +78,7 @@ $line-gap: 12px;
     transition: height 300ms;
     font-size: 14px;
     line-height: 20px;
-    
+
     .bolden {
       font-weight: bold;
     }
@@ -93,7 +95,7 @@ $line-gap: 12px;
   .arrow {
     cursor: pointer;
     display: inline-block;
-    transition: transform .3s;
+    transition: transform 0.3s;
   }
   .rotateArrow {
     transform: rotate(90deg);
@@ -107,5 +109,3 @@ $line-gap: 12px;
     width: 100%;
   }
 }
-
-
