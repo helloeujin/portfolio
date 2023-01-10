@@ -11,8 +11,11 @@ const About = () => {
           target="_blank"
         >
           the Washington Post
-        </a>
-        . Before joining the Post, I worked as a multimedia editor at{" "}
+        </a>{" "}
+        worked on a wide range of stories including coronavirus trackers and
+        created a color palette for graphics.
+        <br />
+        <br /> Before joining the Post, I worked as a multimedia editor at{" "}
         <a href="https://www.wsj.com/" target="_blank">
           the Wall Street Journal
         </a>{" "}
@@ -27,8 +30,8 @@ const About = () => {
           the Interactive Telecommunications Program (ITP)
         </a>{" "}
         at New York University. Prior to that, I studied Mechanical Engineering
-        (mobile robotics) at Korea University and developed a road detection
-        algorithm.
+        at Korea University and developed a road detection algorithm for a
+        surveilance robot.
         <br />
         <br />
         You can reach me by email at{" "}
