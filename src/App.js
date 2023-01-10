@@ -3,8 +3,17 @@ import "./css/App.scss";
 import Footer from "./Footer";
 import More from "./More";
 import Portfolio from "./Portfolio";
+import ReactGA from "react-ga";
+import { useEffect } from "react";
 
 function App() {
+  const TRACKING_ID = "const TRACKING_ID =";
+
+  useEffect(() => {
+    ReactGA.initialize(TRACKING_ID);
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   return (
     <>
       <div className="intro-text">
