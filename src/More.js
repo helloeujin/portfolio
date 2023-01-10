@@ -66,9 +66,9 @@ const More = () => {
       </div>
       <div className={clickedIndex[1] ? "moreDesc  showHonors" : "moreDesc "}>
         {" "}
-        {honorsData.map((honor) => {
+        {honorsData.map((honor, index) => {
           return (
-            <div className="honor">
+            <div className="honor" key={"honor" + index}>
               <span className="date">{honor.date} </span>
               {honor.org}, {honor.award}
               {honor.story ? (
@@ -88,9 +88,9 @@ const More = () => {
       </div>
       <div className={clickedIndex[2] ? "moreDesc  showTeaching" : "moreDesc "}>
         {" "}
-        {teachingData.map((teaching) => {
+        {teachingData.map((teaching, index) => {
           return (
-            <div className="honor">
+            <div className="honor" key={"teaching" + index}>
               <span className="date">{teaching.date} </span>
               {teaching.school}
               {teaching.desc ? (
