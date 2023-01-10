@@ -7,7 +7,7 @@ import ReactGA from "react-ga";
 import { useEffect } from "react";
 
 function App() {
-  const TRACKING_ID = "const TRACKING_ID =";
+  const TRACKING_ID = process.env.STREAM_ID;
 
   useEffect(() => {
     ReactGA.initialize(TRACKING_ID);
